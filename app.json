@@ -40,6 +40,7 @@
       "typedRoutes": true
     },
     "extra": {
+      "API_URL": "https://your-backend-domain.com",
       "router": {},
       "eas": {
         "projectId": "0acdf021-b614-4fba-a9f8-0e59101515d8"

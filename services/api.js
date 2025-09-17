@@ -1,9 +1,11 @@
 // services/api.ts
 import axios from "axios";
-import { BASE_URL } from "../constants/config";
+import Constants from "expo-constants";
+
+const API_URL = Constants.expoConfig?.extra?.API_URL ?? "http://localhost:5000";
 
 const api = axios.create({
-  baseURL: BASE_URL,
+  baseURL: API_URL,
 });
 
 // ✅ fetch medicines
