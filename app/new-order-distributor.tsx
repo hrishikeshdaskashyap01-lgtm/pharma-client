@@ -1,0 +1,20 @@
+// app/new-order-distributor.tsx
+import React from "react";
+import { StyleSheet } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context"; 
+import DistributorUI from "./distributor/DistributorUI";
+
+export default function NewOrderDistributor() {
+  return (
+    <SafeAreaView style={styles.container} edges={["top", "left", "right"]}>
+      <DistributorUI />
+    </SafeAreaView>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: { 
+    flex: 1, 
+    backgroundColor: "#fff" 
+  },
+});
