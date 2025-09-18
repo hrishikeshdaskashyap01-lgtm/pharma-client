@@ -1,1 +1,4 @@
-export const BASE_URL = "http://10.220.135.137:5000";
+import Constants from "expo-constants";
+
+export const BASE_URL =
+  Constants.expoConfig?.extra?.API_URL ?? "https://pharma-backend-utqb.onrender.com";
